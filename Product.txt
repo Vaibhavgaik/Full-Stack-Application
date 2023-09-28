@@ -1,0 +1,10 @@
+CREATE TABLE Products (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    ProductName VARCHAR(255) NOT NULL,
+    Category VARCHAR(255),
+    Price DECIMAL(10, 2) NOT NULL,
+    StockQuantity INT NOT NULL,
+    Supplier VARCHAR(255)
+);
+INSERT INTO Products (ProductName, Category, Price, StockQuantity, Supplier)
+VALUES ('Sample Product', 'Electronics', 499.99, 50, 'Tech Supplier Inc');
